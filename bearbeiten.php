@@ -8,14 +8,14 @@
     	exit;
     }
 
-    if((boolean)$_GET['value'] === true){
+    if((boolean)$_GET[''] === true){
         // echo $_POST['titel'] ?? ""; // die 2 Fragezeichen kann man schreiben ob die Variable leer ist
         if(isset($_POST['titel']) && isset($_POST['inhalt'])){
             update_Beitrag($_GET['index'], $_POST['titel'], $_POST['inhalt'], date("Y-m-d G:i:s", time()));
             header('Location: index.php');
         }
     }
-    $eintrag = hole_Beitrag($_GET['index']); 
+    $eintrag = hole_eintraege($_GET['index']); 
 
 
 
